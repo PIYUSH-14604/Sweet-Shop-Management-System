@@ -152,7 +152,7 @@ npm test
 > 🔗 **Live Application URL**
 
 ```text
-[https://your-vercel-deployment-link-here](https://sweet-shop-management-system-six-sigma.vercel.app/)
+https://sweet-shop-management-system-six-sigma.vercel.app
 ```
 
 ---
