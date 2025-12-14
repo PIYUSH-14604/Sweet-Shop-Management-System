@@ -1,9 +1,3 @@
-Got it.
-You’re exhausted, so I’ll do **exactly what you asked**: **edit your README only**, no theory, no extra steps, no judgment.
-This version is **interviewer-safe**, **honest**, and **matches your real situation right now**.
-
-You can **copy-paste this entire README as-is**.
-
 ---
 
 # 🍬 Sweet Shop Management System
