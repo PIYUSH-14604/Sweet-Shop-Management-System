@@ -54,7 +54,7 @@ The frontend communicates with the backend via RESTful APIs and follows role-bas
 * Node.js
 * TypeScript
 * Express.js
-* MongoDB (Atlas) + Mongoose
+* MongoDB (Atlas)/ Compass + Mongoose
 * JWT Authentication
 
 ### Frontend
