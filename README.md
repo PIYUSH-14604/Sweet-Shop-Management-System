@@ -1,199 +1,218 @@
-🍬 Sweet Shop Management System
+# 🍬 Sweet Shop Management System
 
-A full-stack Sweet Shop Management System built as a modern Single Page Application (SPA).
-This project demonstrates backend API development, frontend SPA architecture, database integration, automated testing, clean coding practices, and responsible use of AI tools.
+A full-stack **Sweet Shop Management System** built as a modern **Single Page Application (SPA)**.
+This project demonstrates backend API development, frontend SPA architecture, database integration, automated testing, clean coding practices, and **responsible use of AI tools**.
 
-📌 Project Overview
+---
+
+## 📌 Project Overview
 
 The application allows users to browse and purchase sweets, while administrators can manage inventory through a dedicated admin interface.
-It is designed with role-based access control, RESTful APIs, and testable backend logic.
+It is designed with **role-based access control**, **RESTful APIs**, and **testable backend logic**.
 
 This repository contains both:
 
-a Node.js backend (API + database)
+* a **Node.js backend** (API + database)
+* a **React frontend** (SPA client)
 
-a React frontend (SPA client)
+---
 
-🚀 Features
-User
+## 🚀 Features
 
-Register and login
+### User
 
-View available sweets
+* Register and login
+* View available sweets
+* Search sweets by name or category
+* Purchase sweets with quantity validation
 
-Search sweets by name or category
+### Admin
 
-Purchase sweets with quantity validation
+* Add new sweets
+* Update sweet details (price, quantity, category)
+* Restock inventory
+* Delete sweets
+* View and manage inventory
 
-Admin
+### Technical
 
-Add new sweets
+* JWT-based authentication
+* Role-based authorization (User / Admin)
+* RESTful API design
+* Automated backend testing
+* Clean and maintainable code structure
 
-Update sweet details (price, quantity, category)
+---
 
-Restock inventory
+## 🛠 Tech Stack
 
-Delete sweets
+### Backend
 
-View and manage inventory
+* Node.js
+* TypeScript
+* Express.js
+* MongoDB + Mongoose
+* JWT Authentication
 
-Technical
+### Frontend
 
-JWT-based authentication
+* React (Vite)
+* Axios
+* Custom CSS
 
-Role-based authorization (User / Admin)
+### Testing
 
-RESTful API design
+* Jest
+* Supertest
 
-Automated backend testing
+---
 
-Clean and maintainable code structure
+## ⚙️ Local Setup Instructions
 
-🛠 Tech Stack
-Backend
+### 1️⃣ Clone the Repository
 
-Node.js
-
-TypeScript
-
-Express.js
-
-MongoDB + Mongoose
-
-JWT Authentication
-
-Frontend
-
-React (Vite)
-
-Axios
-
-Custom CSS
-
-Testing
-
-Jest
-
-Supertest
-
-⚙️ Local Setup Instructions
-1️⃣ Clone the Repository
+```bash
 git clone https://github.com/PIYUSH-14604/Sweet-Shop-Management-System.git
 cd Sweet-Shop-Management-System
+```
 
-2️⃣ Backend Setup
+---
+
+### 2️⃣ Backend Setup
 
 Copy environment variables:
 
+```bash
 cp backend/.env.example backend/.env
+```
 
+Set the following values in `backend/.env`:
 
-Set the following values in backend/.env:
-
+```env
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
-
+```
 
 Install dependencies and start backend:
 
+```bash
 cd backend
 npm install
 npm run dev
-
+```
 
 Backend runs at:
 
+```
 http://localhost:4000/api
+```
 
-3️⃣ Frontend Setup
+---
+
+### 3️⃣ Frontend Setup
+
+```bash
 cd frontend
 npm install
 npm run dev
-
+```
 
 Frontend runs at:
 
+```
 http://localhost:5173
+```
 
-🧪 Running Tests
+---
 
-Backend tests are written using Jest and Supertest.
+## 🧪 Running Tests
 
+Backend tests are written using **Jest** and **Supertest**.
+
+```bash
 cd backend
 npm test
-
+```
 
 All tests should pass successfully.
 
-🌐 Live Deployment (Optional)
+---
 
-🔗 Live Application URL
+## 🌐 Live Deployment (Optional)
 
+> 🔗 **Live Application URL**
+
+```text
 https://your-vercel-deployment-link-here
+```
 
+> Replace the link above with your deployed frontend (e.g. Vercel).
+> Backend can be deployed separately using Render / Railway / AWS.
 
-Replace the link above with your deployed frontend (e.g. Vercel).
-Backend can be deployed separately using Render / Railway / AWS.
+---
 
-🤖 My AI Usage
+## 🤖 My AI Usage
 
-AI tools were used transparently and responsibly during development.
+AI tools were used **transparently and responsibly** during development.
 
-AI Tools Used
+### AI Tools Used
 
-GitHub Copilot
+* **GitHub Copilot**
+* **ChatGPT**
 
-ChatGPT
+---
 
-How I Used AI
+### How I Used AI
 
-GitHub Copilot
+* **GitHub Copilot**
 
-Assisted with boilerplate code generation
+  * Assisted with boilerplate code generation
+  * Helped speed up repetitive tasks such as CRUD handlers and React components
+  * Provided inline code suggestions during development
 
-Helped speed up repetitive tasks such as CRUD handlers and React components
+* **ChatGPT**
 
-Provided inline code suggestions during development
+  * Helped reason about backend API design and data flow
+  * Assisted in drafting and refining Jest & Supertest test cases
+  * Guided refactoring for cleaner frontend components
+  * Helped improve documentation and overall project structure
 
-ChatGPT
+All AI-generated suggestions were **reviewed, modified, and fully understood** before being integrated.
 
-Helped reason about backend API design and data flow
+---
 
-Assisted in drafting and refining Jest & Supertest test cases
-
-Guided refactoring for cleaner frontend components
-
-Helped improve documentation and overall project structure
-
-All AI-generated suggestions were reviewed, modified, and fully understood before being integrated.
-
-Reflection on AI Usage
+### Reflection on AI Usage
 
 AI significantly improved productivity by reducing time spent on boilerplate and by acting as a technical assistant during debugging and refactoring.
 Rather than replacing problem-solving, AI complemented my workflow and helped me focus on architecture, correctness, and code quality.
-This project reflects my own implementation, augmented by modern AI tools used responsibly.
+This project reflects **my own implementation**, augmented by modern AI tools used responsibly.
 
-🧾 Test Report Summary
+---
 
-Authentication APIs (register & login) tested
+## 🧾 Test Report Summary
 
-Protected sweets APIs tested
+* Authentication APIs (register & login) tested
+* Protected sweets APIs tested
+* Core inventory logic validated
 
-Core inventory logic validated
-
-Result:
+**Result:**
 ✅ All tests passed successfully
 
-🧠 Notes
+---
 
-MongoDB Compass was used only for local development and debugging
+## 🧠 Notes
 
-No code was copied from external repositories or developers
+* MongoDB Compass was used only for local development and debugging
+* No code was copied from external repositories or developers
+* The project follows clean coding practices and modular design
+* AI usage is fully documented and transparent
 
-The project follows clean coding practices and modular design
+---
 
-AI usage is fully documented and transparent
+## 👤 Author
 
-👤 Author
+**Piyush**
 
-Piyush
+---
+
+Just tell me 👍
